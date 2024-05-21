@@ -1,4 +1,5 @@
-import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { FaCalendarAlt, FaPlane, FaUmbrellaBeach } from "react-icons/fa";
 
 const Index = () => {
@@ -23,6 +24,9 @@ const Index = () => {
               <Text as="span" fontWeight="bold">Step 3:</Text> Get recommendations on how to maximize your vacation days.
             </ListItem>
           </List>
+          <Box mt={4} textAlign="center">
+            <Button as={Link} to="/calendar" colorScheme="teal">Go to Calendar</Button> {/* Add button to navigate to Calendar */}
+          </Box>
         </Box>
       </VStack>
     </Container>
