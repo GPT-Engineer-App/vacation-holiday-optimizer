@@ -1,17 +1,29 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { FaCalendarAlt, FaPlane, FaUmbrellaBeach } from "react-icons/fa";
 
 const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+        <Heading as="h1" size="2xl" textAlign="center">Maximize Your Vacation Days</Heading>
+        <Text fontSize="lg" textAlign="center">Pair your vacation days with public holidays in Germany to make the most out of your time off.</Text>
+        <Box p={4} borderWidth="1px" borderRadius="lg" width="100%">
+          <Heading as="h2" size="lg" mb={4}>How It Works</Heading>
+          <List spacing={3}>
+            <ListItem>
+              <ListIcon as={FaCalendarAlt} color="green.500" />
+              <Text as="span" fontWeight="bold">Step 1:</Text> Select your desired vacation period.
+            </ListItem>
+            <ListItem>
+              <ListIcon as={FaPlane} color="green.500" />
+              <Text as="span" fontWeight="bold">Step 2:</Text> View public holidays in Germany during that period.
+            </ListItem>
+            <ListItem>
+              <ListIcon as={FaUmbrellaBeach} color="green.500" />
+              <Text as="span" fontWeight="bold">Step 3:</Text> Get recommendations on how to maximize your vacation days.
+            </ListItem>
+          </List>
+        </Box>
       </VStack>
     </Container>
   );
