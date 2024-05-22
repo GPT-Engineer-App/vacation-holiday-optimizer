@@ -17,8 +17,8 @@ const Navbar = () => {
           <Button as={RouterLink} to="/calendar" variant="ghost" color="white" mr={4}>
             Calendar
           </Button>
-          <Button as={RouterLink} to="/about" variant="ghost" color="white">
-            About
+          <Button as={RouterLink} to="/contact" variant="ghost" color="white">
+            Contact
           </Button>
         </Flex>
       </Flex>
