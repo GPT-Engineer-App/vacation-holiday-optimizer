@@ -14,8 +14,11 @@ const Navbar = () => {
           <Button as={RouterLink} to="/" variant="ghost" color="white" mr={4}>
             Home
           </Button>
-          <Button as={RouterLink} to="/calendar" variant="ghost" color="white">
+          <Button as={RouterLink} to="/calendar" variant="ghost" color="white" mr={4}>
             Calendar
+          </Button>
+          <Button as={RouterLink} to="/contact" variant="ghost" color="white">
+            Contact
           </Button>
         </Flex>
       </Flex>
