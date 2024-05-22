@@ -1,4 +1,4 @@
-import { Box, Flex, Link, Button, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, Link, Button } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -17,8 +17,11 @@ const Navbar = () => {
           <Button as={RouterLink} to="/calendar" variant="ghost" color="white" mr={4}>
             Calendar
           </Button>
-          <Button as={RouterLink} to="/about" variant="ghost" color="white">
+          <Button as={RouterLink} to="/about" variant="ghost" color="white" mr={4}>
             About
+          </Button>
+          <Button as={RouterLink} to="/contact" variant="ghost" color="white">
+            Contact
           </Button>
         </Flex>
       </Flex>
